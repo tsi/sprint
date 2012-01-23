@@ -1,0 +1,9 @@
+
+/**
+ * This style sheet will be called for the printed version only
+ * All we do here is remove the .simple-print-bar
+ */
+
+.simple-print-bar {
+  display: none;
+}

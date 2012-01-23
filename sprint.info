@@ -1,0 +1,5 @@
+
+name = "sprint"
+description = "S(imple )Print provides a simple printable version of your pages"
+core = 7.x
+package = "Other"
