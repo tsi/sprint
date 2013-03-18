@@ -3,3 +3,7 @@ name = "sprint"
 description = "S(imple )Print provides a simple printable version of your pages"
 core = 7.x
 package = "Other"
+
+scripts[] = sprint.js
+stylesheets[all][] = sprint.css
+stylesheets[print][] = sprint-print.css
