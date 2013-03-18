@@ -1,7 +1,6 @@
 
 /**
  * Simple Print style sheet
- * All we do here is remove stuff and style the top bar
  */
 
 html.print, 
@@ -12,18 +11,26 @@ body.print.admin-menu {
   margin: 0 !important;
   padding: 0 !important;
 }
-body.print .page-header,
-body.print #footer,
-body.print .region-sidebar-first {
-  display: none;
-}
 body.print .simple-print-bar {
   background: #f8f8f8;
   border-bottom: 1px solid #ebebeb;
   height: 25px;
-  padding: 10px 10px 0;
+  padding: 6px 10px;
+  line-height: 25px;
+  margin-bottom: 15px;
 }
 body.print .simple-print-bar a {
   color: #0080ff;
-  margin: 0 10px;
+  margin: 0 20px;
+}
+body.print .simple-print-bar a:before {
+  padding-right: 5px;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+body.print .simple-print-bar a.print:before {
+  content: "↧";
+}
+body.print .simple-print-bar a.back:before {
+  content: "↶";
 }
