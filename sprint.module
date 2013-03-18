@@ -1,15 +1,8 @@
 <?php
 /**
  * @file
- * Drupal Module: simple_print
+ * Drupal Module: S(imple)Print
  * Adds a printable version to your pages.
+ *
+ * Nothing here, it is all happening client-side.
  */
- 
-/**
- * Implementation of hook_preprocess_page().
- */
-function sprint_init() {
-  drupal_add_js(drupal_get_path('module', 'sprint') .'/sprint.js');
-  drupal_add_css(drupal_get_path('module', 'sprint') .'/sprint.css');
-  drupal_add_css(drupal_get_path('module', 'sprint') . '/sprint-print.css', array('group' => CSS_DEFAULT, 'media' => 'print'));
-}
